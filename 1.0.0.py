@@ -90,8 +90,8 @@ Lütfen Bir İşlem Seçiniz:
 12-LOG 2
 13-Faktöriyel 'x!'
 14-Mutlak Değer '|x|'
-15-Radyanı Dereceye Çevirme 'xπ'
-16-Dereceyi Radyana Çevirme 'x°'
+15-Radyanı Dereceye Çevirme
+16-Dereceyi Radyana Çevirme
 17-Mod Alma 'x%'
 18-Sayının Karesi 'x²'
 19-Sayının Küpü 'x³'
@@ -520,7 +520,7 @@ while True:
         if tekrar18 <= 2:
             number1 = float(input("Bir sayı girin: "))
             sonuc = radyanderece(number1)
-            print("{}π = {}".format(number1, sonuc))
+            print("{} = {}".format(number1, sonuc))
             time.sleep(2)
             tekrar18+=1
         elif tekrar18 > 2:
@@ -528,7 +528,7 @@ while True:
             if question == "evet":
                 number1 = float(input("Bir sayı girin: "))
                 sonuc = radyanderece(number1)
-                print("{}π = {}".format(number1, sonuc))
+                print("{} = {}".format(number1, sonuc))
                 time.sleep(2)
                 tekrar18 += 1
             elif question == "hayır":
