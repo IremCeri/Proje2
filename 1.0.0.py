@@ -41,16 +41,16 @@ def tan(x):
     return math.tan(x)
 tekrar13=1
 def log10(x):
-    return math.log(x, 10)
+    return math.log(x)
 tekrar14=1
 def log2(x):
-    return math.log2(x, 2)
+    return math.log2(x)
 tekrar15=1
 def faktöriyel(x):
     return math.factorial(x)
 tekrar16=1
 def mutlakdeğer(x):
-    return math.fabs()
+    return math.fabs(x)
 tekrar17=1
 def radyanderece(x):
     return math.degrees(x)
@@ -258,123 +258,123 @@ while True:
                     print(b)
                     time.sleep(2)
 
-            elif operation == 'böl' or operation == 'Böl':
-                if tekrar7 <= 2:
+        elif operation == 'böl' or operation == 'Böl':
+            if tekrar7 <= 2:
+                sonuc = pibölme(number1, number2)
+                print("{} / {} = {}".format(number1, number2, sonuc))
+                time.sleep(2)
+                tekrar7 += 1
+            elif tekrar7 > 2:
+                question = str(input(a))
+                if question == "evet":
                     sonuc = pibölme(number1, number2)
                     print("{} / {} = {}".format(number1, number2, sonuc))
                     time.sleep(2)
-                    tekrar7 += 1
-                elif tekrar7 > 2:
-                    question = str(input(a))
-                    if question == "evet":
-                        sonuc = piçarpma(number1, number2)
-                        print("{} * {} = {}".format(number1, number2, sonuc))
-                        time.sleep(2)
-                        tekrar6 += 1
-                    elif question == "hayır":
-                        print(b)
-                        time.sleep(2)
-                    else:
-                        print(c)
-                        time.sleep(2)
-                        print(b)
-                        time.sleep(2)
+                    tekrar6 += 1
+                elif question == "hayır":
+                    print(b)
+                    time.sleep(2)
+                else:
+                    print(c)
+                    time.sleep(2)
+                    print(b)
+                    time.sleep(2)
 
-            elif operation == 'topla' or operation == 'Topla':
-                if tekrar8 <= 2:
+        elif operation == 'topla' or operation == 'Topla':
+            if tekrar8 <= 2:
+                sonuc = pitoplama(number1, number2)
+                print("{} + {} = {}".format(number1, number2, sonuc))
+                time.sleep(2)
+                tekrar8 += 1
+            elif tekrar8 > 2:
+                question = str(input(a))
+                if question == "evet":
                     sonuc = pitoplama(number1, number2)
                     print("{} + {} = {}".format(number1, number2, sonuc))
                     time.sleep(2)
                     tekrar8 += 1
-                elif tekrar8 > 2:
-                    question = str(input(a))
-                    if question == "evet":
-                        sonuc = pitoplama(number1, number2)
-                        print("{} + {} = {}".format(number1, number2, sonuc))
-                        time.sleep(2)
-                        tekrar8 += 1
-                    elif question == "hayır":
-                        print(b)
-                        time.sleep(2)
-                    else:
-                        print(c)
-                        time.sleep(2)
-                        print(b)
-                        time.sleep(2)
+                elif question == "hayır":
+                    print(b)
+                    time.sleep(2)
+                else:
+                    print(c)
+                    time.sleep(2)
+                    print(b)
+                    time.sleep(2)
 
-            elif operation == 'çıkar' or operation == 'Çıkar':
-                if tekrar9 <= 2:
+        elif operation == 'çıkar' or operation == 'Çıkar':
+            if tekrar9 <= 2:
+                sonuc = piçıkartma(number1, number2)
+                print("{} - {} = {}".format(number1, number2, sonuc))
+                time.sleep(2)
+                tekrar9 += 1
+            elif tekrar9 > 3:
+                question = str(input(a))
+                if question == "evet":
                     sonuc = piçıkartma(number1, number2)
                     print("{} - {} = {}".format(number1, number2, sonuc))
                     time.sleep(2)
                     tekrar9 += 1
-                elif tekrar9 > 3:
-                    question = str(input(a))
-                    if question == "evet":
-                        sonuc = piçıkartma(number1, number2)
-                        print("{} - {} = {}".format(number1, number2, sonuc))
-                        time.sleep(2)
-                        tekrar9 += 1
-                    elif question == "hayır":
-                        print(b)
-                        time.sleep(2)
-                    else:
-                        print(c)
-                        time.sleep(2)
-                        print(b)
-                        time.sleep(2)
+                elif question == "hayır":
+                    print(b)
+                    time.sleep(2)
+                else:
+                    print(c)
+                    time.sleep(2)
+                    print(b)
+                    time.sleep(2)
 
-        elif selection == '7':
-            if tekrar10 <= 2:
+    elif selection == '7':
+        if tekrar10 <= 2:
+            number1 = float(input("Bir sayı girin: "))
+            sonuc = karekök(number1)
+            print("√{} = {}".format(number1, sonuc))
+            time.sleep(2)
+            tekrar10 += 1
+        elif tekrar10 > 2:
+            question = str(input(a))
+            if question == "evet":
                 number1 = float(input("Bir sayı girin: "))
                 sonuc = karekök(number1)
                 print("√{} = {}".format(number1, sonuc))
                 time.sleep(2)
                 tekrar10 += 1
-            elif tekrar10 > 2:
-                question = str(input(a))
-                if question == "evet":
-                    number1 = float(input("Bir sayı girin: "))
-                    sonuc = karekök(number1)
-                    print("√{} = {}".format(number1, sonuc))
-                    time.sleep(2)
-                    tekrar10 += 1
-                elif question == "hayır":
-                    print(b)
-                    time.sleep(2)
-                else:
-                    print(c)
-                    time.sleep(2)
-                    print(b)
-                    time.sleep(2)
+            elif question == "hayır":
+                print(b)
+                time.sleep(2)
+            else:
+                print(c)
+                time.sleep(2)
+                print(b)
+                time.sleep(2)
 
-        elif selection == '8':
-            if tekrar11 <= 2:
-                number1 = float(input("Bir sayı girin: "))
+    elif selection == '8':
+        if tekrar11 <= 2:
+            number1 = int(input("Bir sayı girin: "))
+            sonuc = sin(number1)
+            print("{}sin = {}".format(number1, sonuc))
+            time.sleep(2)
+            tekrar11 += 1
+        elif tekrar12 > 2:
+            question = str(input(a))
+            if question == "evet":
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = sin(number1)
-                print("√{} = {}".format(number1, sonuc))
+                print("{}sin = {}".format(number1, sonuc))
                 time.sleep(2)
                 tekrar11 += 1
-            elif tekrar12 > 2:
-                question = str(input(a))
-                if question == "evet":
-                    number1 = float(input("Bir sayı girin: "))
-                    sonuc = sin(number1)
-                    print("√{} = {}".format(number1, sonuc))
-                    time.sleep(2)
-                    tekrar11 += 1
-                elif question == "hayır":
-                    print(b)
-                    time.sleep(2)
-                else:
-                    print(c)
-                    time.sleep(2)
-                    print(b)
-                    time.sleep(2)
+            elif question == "hayır":
+                print(b)
+                time.sleep(2)
+            else:
+                print(c)
+                time.sleep(2)
+                print(b)
+                time.sleep(2)
 
     elif selection == '9':
         if tekrar12 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = cos(number1)
             print("{}cos = {}".format(number1, sonuc))
             time.sleep(2)
@@ -382,7 +382,7 @@ while True:
         elif tekrar12 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = cos(number1)
                 print("{}cos = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -398,7 +398,7 @@ while True:
 
     elif selection == '10':
         if tekrar13 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = tan(number1)
             print("{}tan = {}".format(number1, sonuc))
             time.sleep(2)
@@ -406,7 +406,7 @@ while True:
         elif tekrar13 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = tan(number1)
                 print("{}tan = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -422,7 +422,7 @@ while True:
 
     elif selection == '11':
         if tekrar14 <=2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = log10(number1)
             print("{}log10 = {}".format(number1, sonuc))
             time.sleep(2)
@@ -430,7 +430,7 @@ while True:
         elif tekrar14 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = log10(number1)
                 print("{}log10 = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -446,7 +446,7 @@ while True:
 
     elif selection == '12':
         if tekrar15 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = log2(number1)
             print("{}log2 = {}".format(number1, sonuc))
             time.sleep(2)
@@ -454,7 +454,7 @@ while True:
         elif tekrar15 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = log2(number1)
                 print("{}log2 = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -470,7 +470,7 @@ while True:
 
     elif selection == '13':
         if tekrar16 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = faktöriyel(number1)
             print("{}! = {}".format(number1, sonuc))
             time.sleep(2)
@@ -478,7 +478,7 @@ while True:
         elif tekrar16 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = faktöriyel(number1)
                 print("{}! = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -592,7 +592,7 @@ while True:
 
     elif selection == '18':
         if tekrar21 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = sayınınkaresi(number1)
             print("{}² = {}".format(number1, sonuc))
             time.sleep(2)
@@ -600,7 +600,7 @@ while True:
         elif tekrar21 <= 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = sayınınkaresi(number1)
                 print("{}² = {}".format(number1, sonuc))
                 time.sleep(2)
@@ -616,7 +616,7 @@ while True:
 
     elif selection == '19':
         if tekrar22 <= 2:
-            number1 = float(input("Bir sayı girin: "))
+            number1 = int(input("Bir sayı girin: "))
             sonuc = sayınınküpü(number1)
             print("{}³ = {}".format(number1, sonuc))
             time.sleep(2)
@@ -624,7 +624,7 @@ while True:
         elif tekrar22 > 2:
             question = str(input(a))
             if question == "evet":
-                number1 = float(input("Bir sayı girin: "))
+                number1 = int(input("Bir sayı girin: "))
                 sonuc = sayınınküpü(number1)
                 print("{}³ = {}".format(number1, sonuc))
                 time.sleep(2)
